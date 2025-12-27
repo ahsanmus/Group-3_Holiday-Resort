@@ -46,7 +46,8 @@ header .options a {
 }
 
 
-header img {
+header img,
+.background-overlay-container img{
     height: 115px;
     width: 115px;
 }
@@ -149,7 +150,7 @@ header button:hover:before {
     color: #FFFFFF;
 }
 
-.intro {
+.intro-container {
     background-color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +161,7 @@ header button:hover:before {
     align-content: center;
     align-items: center;
 }
-.intro .group-name {
+.intro-container .group-name {
     font-family: "Lato", Sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -169,7 +170,7 @@ header button:hover:before {
     color: #111111;
 }
 
-.intro .resort-name {
+.intro-container .resort-name {
     font-family: "Marcellus", Sans-serif;
     font-size: 45px;
     font-weight: 400;
@@ -177,7 +178,7 @@ header button:hover:before {
     line-height: 1;
 }
 
-.intro .intro-para {
+.intro-container .intro-para {
     flex: 0.7;
     font-family: "Lato", Sans-serif;
     font-size: 16px;
@@ -186,8 +187,132 @@ header button:hover:before {
     color: #000000;
 }
 
+.background-overlay-container {
+    background:  linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 15%,     
+            rgba(255,255,255,0.8) 20%,
+            rgba(255,255,255,0.4) 23%,
+            rgba(255,255,255,0) 26% 
+        ), url(../img/outdoor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.background-overlay-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
 
+.background-overlay-container h2 {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: "Marcellus", Sans-serif;
+    line-height: 34px;
+}
 
+.background-overlay-container p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 24px;
+    max-width: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.booking-container {
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 40px;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 48px;
+    color: #000000;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.title span {
+    color: #006400;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.benefits li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.benefits li::before {
+    content: "⦿";
+    color: #8B0000;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+.more-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.book-btn {
+    width: fit-content;
+    padding: 14px 28px;
+    background: #006400be;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #006400be;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.offers-img img{
+    width: 450px;
+    height: 515px;
+    padding-top: 40px;
+    transform: rotateY(40deg);
+}
 
 
 
