@@ -92,8 +92,6 @@ header button {
 
 header button:hover {
     color: rgba(255, 255, 255, 0.841);
-    
-    cursor: pointer;
 }
 
 header button:before {
@@ -330,7 +328,6 @@ header button:hover:before {
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    
 }
 
 .img-info img:hover {
@@ -600,10 +597,51 @@ header button:hover:before {
     opacity: 0.7;
 }
 
+@media (max-width: 1024px){
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 15px;
+    }
+    .booking-container .offers-img img {
+        transform: rotateY(0);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .gallery a {
+        animation: move 40s linear infinite;
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+        padding: 50px 15px;
+    }
+    .contact-us-img img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .info h1 {
+        font-size: 2rem;
+    }
+}
+
 
 @media (max-width: 760px) {
+/* NAV BAR */
 header {
     flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 header ul {
@@ -617,14 +655,76 @@ header ul a {
 header img {
     height: 80px;
     width: 80px;
-    margin-left: 0;
-    margin-right: 20px;
+    margin: 0 0 10px 0;
 }
-header button {
-    margin-right: 0;
+.options button {
     margin-top: 10px;
 }
+
+/* BACKGROUND IMAGE AND MAIN TITLE*/
+.heading-title {
+    height: 65vh;
 }
+.heading-title h1 {
+    font-size: 3rem;
+}
+.heading-title p {
+    font-size: 12px;
+}
+
+/* INTRO SECTION */
+.intro-container {
+    flex-direction: column;
+    padding: 60px 15px;
+}
+.intro-container .intro-para {
+    flex: 1 1 100%;
+    padding-top: 20px;
+}
+
+.booking-container .content {
+    padding-left: 20px;
+}
+/* GALLERY */
+.img-info {
+    flex-direction: column;
+    align-items: center;
+}
+.img-info img {
+    width: 200px;
+    height: 200px;
+}
+
+.gallery img {
+    width: 650px;
+    height: 500px;
+}
+
+.google_map {
+    height: 300px;
+    margin-top: 50px;
+}
+
+.details {
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+.social-handles ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-handles li img {
+    width: 35px;
+    height: 35px;
+}
+.end p {
+    font-size: 12px;
+}
+
+}
+
+
 
 @media screen and (max-width: 480px){
 header img {
