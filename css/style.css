@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Marcellus&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-size: 1rem;
+    font-family:  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+                    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
 .front-image {
     background-image: url('../img/img.jpg');
     background-size: cover;
@@ -140,6 +147,43 @@ header button:hover:before {
     font-family: "Marcellus", Sans-serif;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+.intro {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 120px 25px 120px 25px;
+}
+.intro-names {
+    align-content: center;
+    align-items: center;
+}
+.intro .group-name {
+    font-family: "Lato", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    font-style: italic;
+    color: #111111;
+}
+
+.intro .resort-name {
+    font-family: "Marcellus", Sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1;
+}
+
+.intro .intro-para {
+    flex: 0.7;
+    font-family: "Lato", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify ;
+    color: #000000;
 }
 
 
