@@ -26,7 +26,7 @@ header {
     align-items: center;
     margin: 0 10px 0;
     padding: 0 10px;
-    background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
     border-radius: 0 0 6px 6px;
@@ -91,6 +91,7 @@ header button {
 }
 
 header button:hover {
+    transition:0.5s all ease;
     color: rgba(255, 255, 255, 0.841);
 }
 
@@ -693,6 +694,9 @@ header img {
 .img-info img {
     width: 200px;
     height: 200px;
+}
+.img-info div:nth-child(4) h2{
+    font-size: 18px;
 }
 
 .gallery img {

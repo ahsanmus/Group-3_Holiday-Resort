@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Marcellus&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,9 @@
 }
 
 body {
-    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
 }
+
 .background-img {
     background: url(../img/wallhaven-d5glmo_1920x1200.png);
     background-size: cover;
@@ -85,7 +88,7 @@ header button {
 
 header button:hover {
     color: white;
-    cursor: pointer;
+    transition: 0.5s all ease;
 }
 
 header button:before {
@@ -149,6 +152,7 @@ header button:hover:before {
     color: #13649e;
     font-weight: 800;
     letter-spacing: 1px;
+    font-family: "Marcellus", sans-serif;
 }
 
 .contact-form input,
@@ -186,6 +190,7 @@ header button:hover:before {
     border: none;
     cursor: pointer;
     font-weight: 600;
+    font-family: "Lato", sans-serif;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
@@ -330,6 +335,17 @@ header button:hover:before {
 }
 
 /* Responsive features */
+@media (max-width: 1024px){
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
 
 @media (max-width: 992px) {
     .contact-container {
@@ -339,55 +355,68 @@ header button:hover:before {
 
 @media (max-width: 760px) {
 
-header {
-    flex-direction: column;
-    padding: 10px;
-}
-header ul {
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-header ul a {
-    font-size: 18px;
-}
-header img {
-    height: 80px;
-    width: 80px;
-    margin-left: 0;
-    margin-right: 20px;
-}
-header button {
-    margin-right: 0;
-    margin-top: 10px;
-}
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    header ul a {
+        font-size: 18px;
+    }
+    header img {
+        height: 80px;
+        width: 80px;
+        margin: 0 0 10px 0;
+    }
+    .options button {
+        margin-top: 10px;
+    }
 
-.details {
-    justify-content: center;
-}
 
-.contact-container {
-    margin: 40px 15px;
-}
+    .details {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+    .social-handles ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-handles li img {
+        width: 35px;
+        height: 35px;
+    }
+    .end p {
+        font-size: 12px;
+    }
 
-.contact-form button {
-    align-self: center;
-}
+    .contact-container {
+        margin: 40px 15px;
+    }
+
+    .contact-form button {
+        align-self: center;
+    }
 
 }
 
 @media screen and (max-width: 480px){
-header img {
-    height: 60px;
-    width: 60px;
-}
-header button {
-    font-size: 18px;
-    padding: 6px 12px;
-}
-.contact-form h1 {
-    font-size: 24px;
-}
+    header img {
+        height: 60px;
+        width: 60px;
+    }
+    header button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    .contact-form h1 {
+        font-size: 24px;
+    }
 
 }
 
