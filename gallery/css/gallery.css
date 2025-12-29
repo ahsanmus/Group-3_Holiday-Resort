@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 * {
     margin: 0;
@@ -12,7 +14,10 @@ body {
                     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 .front-image {
-    background: #cccc;
+    background: url(../../img/resort__7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100%;
 }
@@ -110,4 +115,79 @@ header button:hover:before {
     opacity: 1;
     z-index: -1;
     border-radius: 8px;
+}
+
+.title-photos {
+    font-size: 54px;
+    font-family:"Great Vibes", sans-serif;
+    text-align: center;
+    padding: 40px 0 20px;
+    color: #3096CE;
+}
+
+.gallery-title-container {
+    height: 84vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gallery-title-container .title-names {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 1.6;
+    width: 100%;
+    height: 250px;
+    border: 1.5px solid white;
+    border-radius: 130px;
+    margin: 0 120px;
+    background-color: rgba(0, 0, 0, 0.358);
+    
+}
+.gallery-title-container .title-names h1 {
+    font-family: "Marcellus", sans-serif;
+    font-size: 64px;
+}
+
+.gallery-title-container .title-names p {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.gallery-section {
+    padding: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 18px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.06);
+    filter: 
+        brightness(75%)
+        contrast(105%)
+        saturate(110%);
 }
