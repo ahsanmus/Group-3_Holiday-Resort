@@ -24,6 +24,7 @@ body {
 
 header {
     display: flex;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
     margin: 0 10px 0;
@@ -36,8 +37,7 @@ header {
 
 header ul {
     display: flex;
-    align-items: baseline;
-    gap: 30px;
+    gap: 45px;
     list-style: none;
     padding-top: 5px;
 }
@@ -311,3 +311,133 @@ header button:hover:before {
     opacity: 0.7;
 }
 
+@media (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .gallery-title-container {
+        height: 88vh;
+        padding: 40px 0;
+    }
+
+    .gallery-title-container .title-names {
+        margin: 0 40px;
+        height: auto;
+        padding: 30px;
+        border-radius: 40px;
+    }
+
+    .gallery-title-container .title-names h1 {
+        font-size: 48px;
+    }
+
+    .gallery-title-container .title-names p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    header ul a {
+        font-size: 18px;
+    }
+    header img {
+        height: 80px;
+        width: 80px;
+        margin: 0 0 10px 0;
+    }
+    .options button {
+        margin-top: 10px;
+    }
+
+    
+    .gallery-title-container {
+        height: 63vh;
+        padding: 40px 0;
+    }
+
+    .gallery-title-container .title-names {
+        margin: 0 15px;
+        padding: 25px 20px;
+        border-radius: 25px;
+    }
+
+    .gallery-title-container .title-names h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .gallery-title-container .title-names p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .title-photos {
+        font-size: 36px;
+    }
+
+
+    .gallery-section {
+        padding: 15px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 12px;
+    }
+
+    .google_map {
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+    .social-handles ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-handles li img {
+        width: 35px;
+        height: 35px;
+    }
+    .end p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header img {
+        height: 60px;
+        width: 60px;
+    }
+    header button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    header ul a {
+        font-size: 16px;
+    }
+    .title-photos {
+        font-size: 30px;
+    }
+}
