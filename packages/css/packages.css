@@ -102,7 +102,7 @@ header button {
     text-align: center;
     border: none ;
     outline: none;
-    border-radius: 8px;
+    border-radius: 16px;
     border: none;
     box-shadow: 0 1px 9px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -132,7 +132,7 @@ header button:hover:before {
     right: 0;
     opacity: 1;
     z-index: -1;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .title-booking{
@@ -212,6 +212,8 @@ header button:hover:before {
 
 .rooms {
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .room-card {
@@ -223,13 +225,13 @@ header button:hover:before {
 }
 
 .room-card img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
 .room-info {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     position: relative;
 }
 
@@ -241,6 +243,7 @@ header button:hover:before {
 
 .room-info p {
     font-size: 14px;
+    text-align: justify;
     color: #555;
     margin-bottom: 10px;
     font-family: "Lato", sans-serif;
@@ -251,8 +254,30 @@ header button:hover:before {
     margin-bottom: 5px;
 }
 
+.prices {
+    display: flex;
+    gap: 30px;
+}
+
+.season {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.persons p {
+    font-size: 13px;
+}
+
+.night {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #777;
+}
+
 .room-info button {
-    margin-top: 26px;
+    margin: 6px 0 6px;
     width: fit-content;
     background: #c9972b;
     color: black;
@@ -275,15 +300,24 @@ header button:hover:before {
 .available {
     position: absolute;
     right: 20px;
-    top: 130px;
+    top: 110px;
     color: green;
     font-size: 14px;
 }
 
+.reserve-now {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserve-now p {
+    margin-bottom: 0;
+    padding-top: 14px;
+}
 .small-pics {
     display: flex;
     gap: 15px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .small-pics img{
@@ -301,22 +335,16 @@ header button:hover:before {
     text-shadow: 1px 2px #c9972b;
 }
 
-
 .packages{
     padding: 80px 6%;
     background: #f8f8f8;
 }
-
-
-
-
 
 .offers{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-
 
 .offer{
     flex: 1 1 calc(50% - 50px);
@@ -347,7 +375,7 @@ header button:hover:before {
 
 .description h2{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #22222274;
@@ -385,6 +413,12 @@ header button:hover:before {
     opacity: 0.95;
 }
 
+.description .discount {
+    color: #cc9b33;
+    text-shadow: 1px 2px #f5c662fd;
+    font-weight: 500;
+    float: right;
+}
 
 .footer {
     position: relative;

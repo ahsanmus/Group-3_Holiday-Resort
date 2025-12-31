@@ -35,7 +35,7 @@ header {
 header ul {
     display: flex;
     align-items: baseline;
-    gap: 30px;
+    gap: 45px;
     list-style: none;
     padding-top: 5px;
 }
@@ -55,9 +55,9 @@ header img,
 }
 
 .options {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Segoe UI, Times, serif;
 }
 
 .options a::after {
@@ -83,7 +83,7 @@ header button {
     text-align: center;
     border: none ;
     outline: none;
-    border-radius: 8px;
+    border-radius: 16px;
     border: none;
     box-shadow: 0 1px 9px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -113,7 +113,7 @@ header button:hover:before {
     right: 0;
     opacity: 1;
     z-index: -1;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .heading-title,
@@ -602,6 +602,7 @@ header button:hover:before {
     header {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0;
     }
     header ul {
         flex-wrap: wrap;
@@ -639,104 +640,103 @@ header button:hover:before {
 
 
 @media (max-width: 760px) {
-/* NAV BAR */
-header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-header ul {
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-header ul a {
-    font-size: 18px;
-}
-header img {
-    height: 80px;
-    width: 80px;
-    margin: 0 0 10px 0;
-}
-.options button {
-    margin-top: 10px;
-}
+    /* NAV BAR */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    header ul a {
+        font-size: 18px;
+    }
+    header img {
+        height: 80px;
+        width: 80px;
+        margin: 0 0 10px 0;
+    }
+    .options button {
+        margin-top: 10px;
+    }
 
-/* BACKGROUND IMAGE AND MAIN TITLE*/
-.heading-title {
-    height: 65vh;
-}
-.heading-title h1 {
-    font-size: 3rem;
-}
-.heading-title p {
-    font-size: 12px;
-}
+    /* BACKGROUND IMAGE AND MAIN TITLE*/
+    .heading-title {
+        height: 65vh;
+    }
+    .heading-title h1 {
+        font-size: 3rem;
+    }
+    .heading-title p {
+        font-size: 12px;
+    }
 
-/* INTRO SECTION */
-.intro-container {
-    flex-direction: column;
-    padding: 60px 15px;
-}
-.intro-container .intro-para {
-    flex: 1 1 100%;
-    padding-top: 20px;
-}
+    /* INTRO SECTION */
+    .intro-container {
+        flex-direction: column;
+        padding: 60px 15px;
+    }
+    .intro-container .intro-para {
+        flex: 1 1 100%;
+        padding-top: 20px;
+    }
 
-.booking-container .content {
-    padding-left: 20px;
-}
-/* GALLERY */
-.img-info {
-    flex-direction: column;
-    align-items: center;
-}
-.img-info img {
-    width: 200px;
-    height: 200px;
-}
-.img-info div:nth-child(4) h2{
-    font-size: 18px;
-}
+    .booking-container .content {
+        padding-left: 20px;
+    }
+    /* GALLERY */
+    .img-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-info img {
+        width: 200px;
+        height: 200px;
+    }
+    .img-info div:nth-child(4) h2{
+        font-size: 18px;
+    }
 
-.gallery img {
-    width: 650px;
-    height: 500px;
-}
+    .gallery img {
+        width: 650px;
+        height: 500px;
+    }
 
-.google_map {
-    height: 300px;
-    margin-top: 50px;
-}
+    .google_map {
+        height: 300px;
+        margin-top: 50px;
+    }
 
-.details {
-    flex-direction: column;
-    gap: 30px;
-    align-items: start;
-}
-.social-handles ul {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.social-handles li img {
-    width: 35px;
-    height: 35px;
-}
-.end p {
-    font-size: 12px;
-}
-
+    .details {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+    .social-handles ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-handles li img {
+        width: 35px;
+        height: 35px;
+    }
+    .end p {
+        font-size: 12px;
+    }
 }
 
 
 
 @media screen and (max-width: 480px){
-header img {
-    height: 60px;
-    width: 60px;
-}
-header button {
-    font-size: 18px;
-    padding: 6px 12px;
+    header img {
+        height: 60px;
+        width: 60px;
+    }
+    header button {
+        font-size: 18px;
+        padding: 6px 12px;
 }
 }

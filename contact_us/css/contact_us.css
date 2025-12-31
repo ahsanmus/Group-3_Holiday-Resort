@@ -33,7 +33,7 @@ header {
 header ul {
     display: flex;
     align-items: baseline;
-    gap: 50px;
+    gap: 45px;
     list-style: none;
     padding-top: 5px;
 }
@@ -47,8 +47,8 @@ header .options a {
 
 
 header img {
-    height: 100px;
-    width: 100px;
+    height: 115px;
+    width: 115px;
     margin-left: 20px;
 }
 
@@ -100,7 +100,7 @@ header button:before {
     right: 50%;
     bottom: 0;
     opacity: 0;
-    background-color: #2E5158;
+    background-color: rgba(0, 0, 0, 0.767);
     border-radius: 16px;
 }
 

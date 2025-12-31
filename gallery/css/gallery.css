@@ -56,9 +56,9 @@ header img {
 }
 
 .options {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Segoe UI, Times, serif;
 }
 
 .options a::after {
@@ -84,7 +84,7 @@ header button {
     text-align: center;
     border: none ;
     outline: none;
-    border-radius: 8px;
+    border-radius: 16px;
     border: none;
     box-shadow: 0 1px 9px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -114,7 +114,7 @@ header button:hover:before {
     right: 0;
     opacity: 1;
     z-index: -1;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .title-photos {
