@@ -656,6 +656,10 @@ header button:hover:before {
     .description h2{
         font-size: 20px;
     }
+
+    .reserve-now p {
+        margin-right: 40px;
+    }
 }
 
 @media screen and (max-width: 480px){
