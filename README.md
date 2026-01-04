@@ -7,4 +7,4 @@ The website presents resort facilities, packages, and services through a clean, 
 [Word Report](Documents/Group-3_Word-Report.docx)
 [Excel Sheet](Documents/Group-3_Excel_Data_Sheet.xlsx)
 [Power Point](Documents/Paradise_Resorts_Presentation.pptx)
-[Compiled Pdf](Documents/Compiled_pdf.pdf)
+[Download Compiled Pdf](Documents/Compiled_pdf.pdf)
